@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
-#include "SingleLinkedList.hpp"
-#include "SingleLinkedNode.hpp"
+#include "DoubleLinkedList.hpp"
+#include "DoubleLinkedNode.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    SingleLinkedList l;
+    DoubleLinkedList l;
     while(true){
         string input;
         cout << "What do you want to do?\r(add / delete) > ";
@@ -45,10 +45,14 @@ int main(int argc, const char * argv[]) {
         }
         
         cout << "Your new list: ";
-        SingleLinkedNode* curr = l.head;
+        DoubleLinkedNode* curr = l.head;
         while(curr != NULL){
             cout << curr->value << ",";
             curr = curr->next;
+        }
+        while(curr != NULL){
+            cout << curr->value << ",";
+            curr = curr->prev;
         }
         cout << "\r~~~~~~~~~~~~~~~\r";
     }

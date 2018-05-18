@@ -10,6 +10,8 @@
 		D619EAD820A5253B0024520B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D619EAD720A5253B0024520B /* main.cpp */; };
 		D619EAE020A525830024520B /* SingleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D619EADE20A525830024520B /* SingleLinkedList.cpp */; };
 		D619EAE320A525B30024520B /* SingleLinkedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D619EAE120A525B30024520B /* SingleLinkedNode.cpp */; };
+		D69184F020AE6C5000D1E06F /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D69184EE20AE6C5000D1E06F /* DoubleLinkedList.cpp */; };
+		D69184F120AE6C5000D1E06F /* DoubleLinkedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D69184EF20AE6C5000D1E06F /* DoubleLinkedNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		D619EADF20A525830024520B /* SingleLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedList.hpp; sourceTree = "<group>"; };
 		D619EAE120A525B30024520B /* SingleLinkedNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SingleLinkedNode.cpp; sourceTree = "<group>"; };
 		D619EAE220A525B30024520B /* SingleLinkedNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedNode.hpp; sourceTree = "<group>"; };
+		D69184EC20AE6C5000D1E06F /* DoubleLinkedNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedNode.hpp; sourceTree = "<group>"; };
+		D69184ED20AE6C5000D1E06F /* DoubleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedList.hpp; sourceTree = "<group>"; };
+		D69184EE20AE6C5000D1E06F /* DoubleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedList.cpp; sourceTree = "<group>"; };
+		D69184EF20AE6C5000D1E06F /* DoubleLinkedNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedNode.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,10 @@
 				D619EAD720A5253B0024520B /* main.cpp */,
 				D619EADE20A525830024520B /* SingleLinkedList.cpp */,
 				D619EADF20A525830024520B /* SingleLinkedList.hpp */,
+				D69184EE20AE6C5000D1E06F /* DoubleLinkedList.cpp */,
+				D69184ED20AE6C5000D1E06F /* DoubleLinkedList.hpp */,
+				D69184EF20AE6C5000D1E06F /* DoubleLinkedNode.cpp */,
+				D69184EC20AE6C5000D1E06F /* DoubleLinkedNode.hpp */,
 				D619EAE120A525B30024520B /* SingleLinkedNode.cpp */,
 				D619EAE220A525B30024520B /* SingleLinkedNode.hpp */,
 			);
@@ -132,6 +142,8 @@
 				D619EAE320A525B30024520B /* SingleLinkedNode.cpp in Sources */,
 				D619EAE020A525830024520B /* SingleLinkedList.cpp in Sources */,
 				D619EAD820A5253B0024520B /* main.cpp in Sources */,
+				D69184F120AE6C5000D1E06F /* DoubleLinkedNode.cpp in Sources */,
+				D69184F020AE6C5000D1E06F /* DoubleLinkedList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
