@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D619EAD820A5253B0024520B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D619EAD720A5253B0024520B /* main.cpp */; };
+		D619EAE020A525830024520B /* SingleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D619EADE20A525830024520B /* SingleLinkedList.cpp */; };
+		D619EAE320A525B30024520B /* SingleLinkedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D619EAE120A525B30024520B /* SingleLinkedNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		D619EAD420A5253B0024520B /* CPPLinkedLists */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPLinkedLists; sourceTree = BUILT_PRODUCTS_DIR; };
 		D619EAD720A5253B0024520B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D619EADE20A525830024520B /* SingleLinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SingleLinkedList.cpp; sourceTree = "<group>"; };
+		D619EADF20A525830024520B /* SingleLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedList.hpp; sourceTree = "<group>"; };
+		D619EAE120A525B30024520B /* SingleLinkedNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SingleLinkedNode.cpp; sourceTree = "<group>"; };
+		D619EAE220A525B30024520B /* SingleLinkedNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				D619EAD720A5253B0024520B /* main.cpp */,
+				D619EADE20A525830024520B /* SingleLinkedList.cpp */,
+				D619EADF20A525830024520B /* SingleLinkedList.hpp */,
+				D619EAE120A525B30024520B /* SingleLinkedNode.cpp */,
+				D619EAE220A525B30024520B /* SingleLinkedNode.hpp */,
 			);
 			path = CPPLinkedLists;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D619EAE320A525B30024520B /* SingleLinkedNode.cpp in Sources */,
+				D619EAE020A525830024520B /* SingleLinkedList.cpp in Sources */,
 				D619EAD820A5253B0024520B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
