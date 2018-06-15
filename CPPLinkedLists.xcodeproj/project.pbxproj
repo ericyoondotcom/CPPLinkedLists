@@ -37,6 +37,8 @@
 		D69184ED20AE6C5000D1E06F /* DoubleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedList.hpp; sourceTree = "<group>"; };
 		D69184EE20AE6C5000D1E06F /* DoubleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedList.cpp; sourceTree = "<group>"; };
 		D69184EF20AE6C5000D1E06F /* DoubleLinkedNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedNode.cpp; sourceTree = "<group>"; };
+		D6936F9C20D32CE0006C5E82 /* DoubleLinkedListTemplates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedListTemplates.hpp; sourceTree = "<group>"; };
+		D6936F9F20D32D23006C5E82 /* DoubleLinkedNodeTemplates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedNodeTemplates.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,8 @@
 				D619EADE20A525830024520B /* SingleLinkedList.cpp */,
 				D619EADF20A525830024520B /* SingleLinkedList.hpp */,
 				D69184EE20AE6C5000D1E06F /* DoubleLinkedList.cpp */,
+				D6936F9C20D32CE0006C5E82 /* DoubleLinkedListTemplates.hpp */,
+				D6936F9F20D32D23006C5E82 /* DoubleLinkedNodeTemplates.hpp */,
 				D69184ED20AE6C5000D1E06F /* DoubleLinkedList.hpp */,
 				D69184EF20AE6C5000D1E06F /* DoubleLinkedNode.cpp */,
 				D69184EC20AE6C5000D1E06F /* DoubleLinkedNode.hpp */,
