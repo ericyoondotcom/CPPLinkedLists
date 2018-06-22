@@ -13,15 +13,13 @@ public:
     T value;
     std::shared_ptr<DoubleLinkedNodeTemplates<T>> next;
     std::shared_ptr<DoubleLinkedNodeTemplates<T>> prev;
-private:
-    
 };
 
 template <class T>
 DoubleLinkedNodeTemplates<T>::DoubleLinkedNodeTemplates(T val){
     value = val;
-    next = NULL;
-    prev = NULL;
+    next = nullptr;
+    prev = nullptr;
 }
 
 #endif /* DoubleLinkedNodeTemplates_hpp */
