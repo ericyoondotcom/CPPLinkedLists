@@ -30,8 +30,12 @@ DoubleLinkedListTemplates<T>::DoubleLinkedListTemplates()
 
 template <class T>
 void DoubleLinkedListTemplates<T>::AddHead(T newVal){
-    auto oldHead = head;
-    head = make_shared<DoubleLinkedNodeTemplates<T>>(DoubleLinkedNodeTemplates<T>(newVal));
+    if(head == nullptr){
+        head = new DoubleLinkedNodeTemplates<T>(newVal);
+        return;
+    }
+    DoubleLinkedNodeTemplates<T>* oldHead = head;
+    head = new DoubleLinkedNodeTemplates<T>(newVal);
     head->next = make_shared<DoubleLinkedNodeTemplates<T>>(*oldHead);
     if(head->next != nullptr) head->next->prev = make_shared<DoubleLinkedNodeTemplates<T>>(*head);
     
@@ -43,19 +47,24 @@ void DoubleLinkedListTemplates<T>::AddTail(T newVal){
         head = make_shared<DoubleLinkedNodeTemplates<T>>(DoubleLinkedNodeTemplates<T>(newVal));
         return;
     }
-    auto currNode = make_shared<DoubleLinkedNodeTemplates<T>>(*head);
-    while(currNode->next != NULL){
-        currNode = currNode->next;
+    auto* currNode = head;
+    while(currNode->next != nullptr){
+        currNode = currNode->next.get();
     }
     currNode->next = make_shared<DoubleLinkedNodeTemplates<T>>(DoubleLinkedNodeTemplates<T>(newVal));
-    currNode->next->prev = currNode;
+    currNode->next->prev = currNode->next;
+    currNode = nullptr;
 }
 
 template <class T>
 void DoubleLinkedListTemplates<T>::RemoveNode(T val){
     if(head->value == val){
-        head = head->next;
-        if(head->next != nullptr) head->next->prev = nullptr;
+        if(head->next == nullptr){
+            delete head;
+            head = nullptr;
+            return;
+        }
+        head = head->next.get();
         return;
     }
     shared_ptr<DoubleLinkedNodeTemplates<T>> prevNode = nullptr;
@@ -77,18 +86,24 @@ void DoubleLinkedListTemplates<T>::RemoveNode(T val){
 template <class T>
 void DoubleLinkedListTemplates<T>::RemoveAt(int index){
     if(index == 0){
-        head = head->next;
-        if(head->next != nullptr) head->next->prev = nullptr;
+        if(head->next == nullptr){
+            delete head;
+            head = nullptr;
+            return;
+        }
+        
+        head->next->prev = nullptr;
+        head = head->next.get();
         return;
     }
-    shared_ptr<DoubleLinkedNodeTemplates<T>> prevNode = nullptr;
-    shared_ptr<DoubleLinkedNodeTemplates<T>> currNode = make_shared<DoubleLinkedNodeTemplates<T>>(*head);
+    DoubleLinkedNodeTemplates<T>* prevNode = nullptr;
+    auto* currNode = head;
     for(int i = 0; i < index; i++){
         prevNode = currNode;
-        currNode = currNode->next;
+        currNode = currNode->next.get();
     }
     prevNode->next = currNode->next;
-    currNode->next->prev = prevNode;
+    currNode->next->prev = currNode->next;
     //delete currNode;
     currNode = nullptr;
     
