@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPPLinkedLists/main.cpp"
-            timestampString = "551319050.3829"
+            timestampString = "552529292.877942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -38,16 +38,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPPLinkedLists/DoubleLinkedListTemplates.hpp"
-            timestampString = "551319050.383059"
+            timestampString = "552529292.8781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "AddHead(T newVal)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "RemoveNode(T val)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
