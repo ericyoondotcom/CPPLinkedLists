@@ -26,7 +26,9 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPPLinkedLists/main.cpp"
+
             timestampString = "552529292.877942"
+
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -42,7 +44,9 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPPLinkedLists/DoubleLinkedListTemplates.hpp"
+
             timestampString = "552529292.8781"
+
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"

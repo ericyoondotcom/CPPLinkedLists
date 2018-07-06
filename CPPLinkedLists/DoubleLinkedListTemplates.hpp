@@ -17,7 +17,7 @@ public:
     void RemoveNode(T val);
     void RemoveAt(int index);
     
-    DoubleLinkedNodeTemplates<T>* head;
+    shared_ptr<DoubleLinkedNodeTemplates<T>> head;
 private:
     
 };
@@ -44,7 +44,7 @@ void DoubleLinkedListTemplates<T>::AddHead(T newVal){
 template <class T>
 void DoubleLinkedListTemplates<T>::AddTail(T newVal){
     if(head == nullptr){
-        head = new DoubleLinkedNodeTemplates<T>(newVal);
+        head = make_shared<DoubleLinkedNodeTemplates<T>>(DoubleLinkedNodeTemplates<T>(newVal));
         return;
     }
     auto* currNode = head;
