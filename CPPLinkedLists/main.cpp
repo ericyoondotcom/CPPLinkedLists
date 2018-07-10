@@ -52,16 +52,20 @@ int main(int argc, const char * argv[]) {
         
         cout << "Your new list: ";
      
-        shared_ptr<DoubleLinkedNodeTemplates<string>> curr = make_shared<DoubleLinkedNodeTemplates<string>>(*l.head);
+        shared_ptr<DoubleLinkedNodeTemplates<string>> curr = l.head;
+        if(l.head == nullptr){
+            cout << "[List empty]";
+        }else{
+            while(curr != NULL){
+                cout << curr->value << ",";
+                curr = curr->next;
+            }
+            while(curr != NULL){
+                cout << curr->value << ",";
+                curr = curr->prev;
+            }
+        }
         
-        while(curr != NULL){
-            cout << curr->value << ",";
-            curr = curr->next;
-        }
-        while(curr != NULL){
-            cout << curr->value << ",";
-            curr = curr->prev;
-        }
         cout << "\r~~~~~~~~~~~~~~~\r";
      
     }
